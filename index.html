@@ -1,487 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SQAS-AFRICA Auditor | Transport Compliance Johannesburg | Risico Consulting</title>
-  <meta name="description" content="Risico Consulting is a CAIA SQAS-AFRICA accredited auditor providing SQAS-AFRICA audits, transport compliance, health and safety, and quality management solutions in South Africa and Southern Africa.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SQAS-AFRICA Auditor | Transport Compliance Johannesburg | Risico Consulting</title>
+<meta name="description" content="Risico Consulting is a CAIA SQAS-AFRICA accredited auditor providing SQAS-AFRICA audits, transport compliance, health and safety, and quality management solutions in South Africa and Southern Africa.">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+*{box-sizing:border-box}
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
+body{
+  font-family:'Montserrat',sans-serif;
+  margin:0;
+  background:#f4f4f4;
+  color:#102033;
+}
 
-    header {
-      background: #123b5c;
-      color: white;
-      padding: 12px 20px 18px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
+header{
+  background:#123b5c;
+  color:white;
+  padding:12px 20px 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
 
-    .top-contact {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 18px;
-      font-size: 14px;
-      font-weight: 500;
-      text-align: center;
-    }
+.top-contact{
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+  justify-content:center;
+  font-size:14px;
+  font-weight:500;
+}
 
-    .top-contact a {
-      color: white;
-      text-decoration: none;
-      cursor: pointer;
-    }
+.top-contact a{
+  color:white;
+  text-decoration:none;
+  cursor:pointer;
+}
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 24px;
-    }
+nav{
+  display:flex;
+  gap:28px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 15px;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:700;
+  font-size:16px;
+}
 
-    .hero {
-      position: relative;
-      background:
-        linear-gradient(rgba(18, 59, 92, 0.72), rgba(18, 59, 92, 0.72)),
-        url('hero-truck.jpg') center center / cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 90px 20px 100px;
-    }
+.hero{
+  background:
+    linear-gradient(rgba(18,59,92,.72),rgba(18,59,92,.72)),
+    url('hero-truck.jpg') center/cover no-repeat;
+  text-align:center;
+  color:white;
+  padding:90px 20px 100px;
+}
 
-    .hero-content {
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+.hero-logo{
+  width:320px;
+  max-width:90%;
+  margin-bottom:25px;
+  filter:drop-shadow(0 6px 16px rgba(0,0,0,.4));
+}
 
-    .hero-logo {
-      width: 260px;
-      max-width: 75%;
-      margin: 0 auto 28px;
-      display: block;
-      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.35));
-    }
+.hero h1{
+  font-size:38px;
+  margin:0 0 12px;
+  font-weight:700;
+}
 
-    .hero h1 {
-      margin: 0 0 14px;
-      font-size: 38px;
-      font-weight: 700;
-      line-height: 1.2;
-      color: #fff;
-    }
+.hero p{
+  font-size:18px;
+  max-width:820px;
+  margin:0 auto;
+  line-height:1.45;
+}
 
-    .hero-subtext {
-      margin: 0 auto 28px;
-      font-size: 19px;
-      font-weight: 400;
-      line-height: 1.5;
-      max-width: 820px;
-      color: #fff;
-    }
+.section{
+  max-width:1280px;
+  margin:auto;
+  padding:34px 32px;
+}
 
-    .hero-cert {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 6px;
-    }
+.section h2{
+  color:#123b5c;
+  font-size:30px;
+  margin:0 0 20px;
+}
 
-    .hero-cert-logo {
-      width: 180px;
-      max-width: 70%;
-      height: auto;
-      display: block;
-      background: rgba(255,255,255,0.95);
-      padding: 10px 14px;
-      border-radius: 8px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
-    }
+.section p{
+  font-size:15px;
+  line-height:1.7;
+  margin:0 0 18px;
+}
 
-    .hero-cert-text {
-      margin: 0;
-      font-size: 15px;
-      font-weight: 600;
-      line-height: 1.4;
-      text-align: center;
-      color: #fff;
-    }
+.flags{
+  display:flex;
+  gap:12px;
+  margin:12px 0 24px;
+  flex-wrap:wrap;
+}
 
-    .section {
-      padding: 34px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.flags img{
+  width:40px;
+  border-radius:4px;
+  box-shadow:0 2px 6px rgba(0,0,0,.18);
+}
 
-    .section h2 {
-      margin: 0 0 15px;
-      font-size: 30px;
-      font-weight: 700;
-      color: #123b5c;
-    }
+.services{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+  margin-top:15px;
+  align-items:stretch;
+}
 
-    .section p {
-      line-height: 1.7;
-      margin: 0 0 18px;
-      font-size: 15px;
-    }
+.service-card{
+  background:white;
+  width:100%;
+  max-width:100%;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 5px 16px rgba(0,0,0,.10);
+  text-align:center;
+}
 
-    .flags {
-      display: flex;
-      gap: 10px;
-      margin: 10px 0 20px;
-      flex-wrap: wrap;
-    }
+.service-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
+}
 
-    .flags img {
-      width: 40px;
-      border-radius: 4px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      transition: transform 0.2s ease;
-    }
+.service-card h3{
+  margin:0;
+  padding:18px 16px 22px;
+  min-height:92px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#123b5c;
+  font-size:18px;
+  line-height:1.35;
+}
 
-    .flags img:hover {
-      transform: scale(1.08);
-    }
+.contact{
+  background:#123b5c;
+  color:white;
+  max-width:none;
+  padding:34px 36px;
+}
 
-    .services {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
+.contact h2{
+  color:white;
+  font-size:30px;
+}
 
-    .service-card {
-      background: white;
-      width: 320px;
-      max-width: 100%;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-    }
+.contact-icons{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
 
-    .service-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-    }
+.contact-icons a{
+  padding:13px 22px;
+  border-radius:28px;
+  text-decoration:none;
+  font-weight:700;
+  cursor:pointer;
+}
 
-    .service-card h3 {
-      margin: 0;
-      padding: 18px 16px 22px;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 1.4;
-      color: #123b5c;
-      min-height: 88px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.call{background:#6fa4c6;color:white}
+.whatsapp{background:#25D366;color:white}
+.email{background:white;color:#123b5c}
 
-    .contact {
-      background: #123b5c;
-      color: white;
-      border-radius: 12px 12px 0 0;
-    }
+.contact-grid{
+  display:block;
+}
 
-    .contact h2 {
-      color: white;
-    }
+form input,form textarea{
+  width:100%;
+  padding:14px 18px;
+  margin:10px 0 18px;
+  border-radius:7px;
+  border:1px solid #d5d5d5;
+  font-family:inherit;
+  font-size:14px;
+}
 
-    .contact-icons {
-      margin-bottom: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+form textarea{
+  min-height:90px;
+  resize:vertical;
+}
 
-    .contact-icons a {
-      padding: 10px 15px;
-      border-radius: 20px;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: 600;
-      font-size: 14px;
-      cursor: pointer;
-    }
+.checkbox-group{
+  margin:12px 0 24px;
+}
 
-    .call {
-      background: #5d8aa8;
-      color: white;
-    }
+.checkbox-group p{
+  color:white;
+  font-weight:700;
+  font-size:15px;
+  margin-bottom:14px;
+}
 
-    .whatsapp {
-      background: #25D366;
-      color: white;
-    }
+.checkbox-group label{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:13px;
+  font-size:15px;
+  cursor:pointer;
+}
 
-    .email {
-      background: white;
-      color: #123b5c;
-    }
+.checkbox-group input[type="checkbox"]{
+  width:18px;
+  height:18px;
+  margin:0;
+  flex-shrink:0;
+}
 
-    form input,
-    form textarea {
-      width: 100%;
-      padding: 14px;
-      margin: 10px 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-family: inherit;
-      font-size: 14px;
-    }
+#checkboxError{
+  display:none;
+  color:#ffb3b3;
+  font-weight:700;
+  background:rgba(255,255,255,.08);
+  padding:10px 12px;
+  border-radius:6px;
+  margin:5px 0 15px;
+  font-size:14px;
+}
 
-    .checkbox-group {
-      margin: 15px 0;
-    }
+.btn{
+  background:#5d8aa8;
+  color:white;
+  border:none;
+  padding:14px 28px;
+  border-radius:6px;
+  font-weight:700;
+  cursor:pointer;
+  font-family:inherit;
+  font-size:15px;
+}
 
-    .checkbox-group p {
-      margin: 0 0 10px;
-      font-weight: 600;
-      font-size: 15px;
-    }
+.map{
+  width:100%;
+  height:300px;
+  border:0;
+  border-radius:10px;
+  margin-top:25px;
+}
 
-    .checkbox-group label {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-      font-size: 15px;
-      line-height: 1.4;
-      cursor: pointer;
-    }
+.footer{
+  background:#0d2c44;
+  color:white;
+  text-align:center;
+  padding:18px;
+  font-size:14px;
+}
 
-    .checkbox-group input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      margin: 0;
-      flex-shrink: 0;
-    }
+@media(max-width:900px){
+  .hero h1{font-size:32px}
+  .hero p{font-size:17px}
 
-    #checkboxError {
-      color: #ffb3b3;
-      display: none;
-      margin-top: 8px;
-      font-size: 14px;
-      font-weight: 500;
-      background: rgba(255,255,255,0.08);
-      padding: 10px 12px;
-      border-radius: 6px;
-    }
+  .services{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
 
-    .map {
-      width: 100%;
-      height: 300px;
-      margin-top: 20px;
-      border: 0;
-      border-radius: 10px;
-    }
+@media(max-width:600px){
+  .hero-logo{width:220px}
+  .section{padding:30px 20px}
+  .section h2,.contact h2{font-size:28px}
+  .section p{font-size:15px}
 
-    .footer {
-      background: #0d2c44;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
+  .services{
+    grid-template-columns:1fr;
+  }
 
-    @media (max-width: 800px) {
-      .hero {
-        padding: 70px 20px 80px;
-      }
-
-      .hero-logo {
-        width: 210px;
-        margin-bottom: 22px;
-      }
-
-      .hero h1 {
-        font-size: 30px;
-      }
-
-      .hero-subtext {
-        font-size: 17px;
-        margin-bottom: 24px;
-      }
-
-      .hero-cert-logo {
-        width: 150px;
-      }
-
-      .hero-cert-text {
-        font-size: 14px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        gap: 16px;
-      }
-
-      nav a {
-        font-size: 14px;
-      }
-
-      .hero-logo {
-        width: 180px;
-      }
-
-      .hero h1 {
-        font-size: 26px;
-      }
-
-      .hero-subtext {
-        font-size: 16px;
-      }
-
-      .hero-cert-logo {
-        width: 135px;
-      }
-
-      .top-contact {
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      .contact-icons {
-        flex-direction: column;
-      }
-
-      .contact-icons a {
-        text-align: center;
-      }
-
-      .service-card {
-        width: 100%;
-      }
-
-      .service-card img {
-        height: 210px;
-      }
-    }
-  </style>
+  .service-card img{height:220px}
+  .service-card h3{font-size:18px}
+  .contact-icons{flex-direction:column}
+  .contact-icons a{text-align:center}
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <div class="top-contact">
-      <a href="tel:+27632578532"><i class="fas fa-phone"></i> +27 63 257 8532</a>
-      <a href="#" onclick="sendEmail(); return false;"><i class="fas fa-envelope"></i> ivor@risico.co.za</a>
+<header>
+  <div class="top-contact">
+    <a href="tel:+27632578532"><i class="fas fa-phone"></i> +27 63 257 8532</a>
+    <a href="#" onclick="sendEmail();return false;"><i class="fas fa-envelope"></i> ivor@risico.co.za</a>
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="logo.png" alt="Risico Consulting Logo" class="hero-logo">
+  <h1>SQAS-AFRICA Accredited Auditor</h1>
+  <p>Helping transport and logistics businesses meet SQAS-AFRICA requirements with confidence.</p>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+
+  <p><strong>Risico Consulting</strong> is a 100% BEE owned company based in Johannesburg, South Africa.</p>
+
+  <p>Our focus lies in providing sustainable solutions to our clients in the area of Health, Safety, Quality and Environmental management.</p>
+
+  <p>Specialising in road transport, our management systems ensure compliance with legislation for the transportation of non-hazardous products through to dangerous goods.</p>
+
+  <p>Being an accredited Chemical & Allied Industries Association (CAIA) SQAS-AFRICA auditor and having completed ISO 9001 Lead Auditor certification, attention to detail is a core fundamental of our approach to management system design and implementation.</p>
+
+  <p>Ensuring logistics companies confidently align their quality management systems with SQAS-AFRICA requirements, legislation and customer requirements.</p>
+
+  <p><strong>We operate across Southern Africa:</strong></p>
+
+  <div class="flags">
+    <img src="https://flagcdn.com/w40/za.png" alt="South Africa">
+    <img src="https://flagcdn.com/w40/bw.png" alt="Botswana">
+    <img src="https://flagcdn.com/w40/ls.png" alt="Lesotho">
+    <img src="https://flagcdn.com/w40/na.png" alt="Namibia">
+    <img src="https://flagcdn.com/w40/zm.png" alt="Zambia">
+    <img src="https://flagcdn.com/w40/zw.png" alt="Zimbabwe">
+  </div>
+
+  <p>Our belief is that by empowering your staff, ensuring their wellbeing and development, your business will be a success. We provide customised training interventions tailored to both organisational and individual needs.</p>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+
+  <div class="services">
+    <div class="service-card">
+      <img src="sqas-service.jpg" alt="SQAS-AFRICA and RTMS audit and training preparation">
+      <h3>SQAS-AFRICA &amp; RTMS Training and Audit Preparation</h3>
     </div>
 
-    <nav>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-content">
-      <img src="logo.png" alt="Risico Logo" class="hero-logo">
-
-      <h1>SQAS-AFRICA Accredited Auditor</h1>
-      <p class="hero-subtext">
-        Helping transport and logistics businesses meet SQAS-AFRICA requirements with confidence.
-      </p>
-
-      <div class="hero-cert">
-        <img src="caia-logo.png" alt="CAIA SQAS-AFRICA Accredited Auditor" class="hero-cert-logo">
-        <p class="hero-cert-text">CAIA SQAS-AFRICA Accredited Auditor</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <h2>About Us</h2>
-
-    <p><strong>Risico Consulting</strong> is a 100% BEE owned company based in Johannesburg, South Africa.</p>
-
-    <p>Our focus lies in providing sustainable solutions to our clients in the area of Health, Safety, Quality and Environmental management.</p>
-
-    <p>Specialising in road transport, our management systems ensure compliance with legislation for the transportation of non-hazardous products through to dangerous goods.</p>
-
-    <p>Being an accredited Chemical & Allied Industries Association (CAIA) SQAS-AFRICA auditor and having completed ISO 9001 Lead Auditor certification, attention to detail is a core fundamental of our approach to management system design and implementation.</p>
-
-    <p>We also ensure that Quality Management Systems are aligned with SQAS-Africa protocols and your company's customer requirements.</p>
-
-    <p><strong>We operate across Southern Africa:</strong></p>
-
-    <div class="flags">
-      <img src="https://flagcdn.com/w40/za.png" alt="South Africa">
-      <img src="https://flagcdn.com/w40/bw.png" alt="Botswana">
-      <img src="https://flagcdn.com/w40/ls.png" alt="Lesotho">
-      <img src="https://flagcdn.com/w40/na.png" alt="Namibia">
-      <img src="https://flagcdn.com/w40/zm.png" alt="Zambia">
-      <img src="https://flagcdn.com/w40/zw.png" alt="Zimbabwe">
+    <div class="service-card">
+      <img src="qms-protocols.jpg" alt="SQAS-AFRICA and RTMS quality management systems">
+      <h3>Design of SQAS-AFRICA &amp; RTMS Quality Management Systems</h3>
     </div>
 
-    <p>Our belief is that by empowering your staff, ensuring their wellbeing and development, your business will be a success. We provide customised training interventions tailored to both organisational and individual needs.</p>
-  </section>
-
-  <section class="section" id="services">
-    <h2>Our Services</h2>
-
-    <div class="services">
-      <div class="service-card">
-        <img src="sqas-service.jpg" alt="SQAS-AFRICA & RTMS Audit and Training Preparation">
-        <h3>SQAS-AFRICA & RTMS Training and Audit Preparation</h3>
-      </div>
-
-      <div class="service-card">
-        <img src="qms-protocols.jpg" alt="SQAS & RTMS Aligned Quality Management Systems Protocols">
-        <h3>Design of SQAS-AFRICA & RTMS Quality Management Systems</h3>
-      </div>
-
-      <div class="service-card">
-        <img src="transport-compliance.jpg" alt="Transport Compliance Audits">
-        <h3>Quality Management System Compliance Audits</h3>
-      </div>
+    <div class="service-card">
+      <img src="transport-compliance.jpg" alt="Quality management system compliance audits">
+      <h3>Quality Management System Compliance Audits</h3>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section contact" id="contact">
-    <h2>Contact Us</h2>
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
 
-    <div class="contact-icons">
-      <a href="tel:+27632578532" class="call">Call Now</a>
-      <a href="#" onclick="sendWhatsApp(); return false;" class="whatsapp">Chat on WhatsApp</a>
-      <a href="#" onclick="sendEmail(); return false;" class="email">Send Email</a>
-    </div>
+  <div class="contact-icons">
+    <a href="tel:+27632578532" class="call"><i class="fas fa-phone"></i> Call Now</a>
+    <a href="#" onclick="sendWhatsApp();return false;" class="whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+    <a href="#" onclick="sendEmail();return false;" class="email"><i class="fas fa-envelope"></i> Send Email</a>
+  </div>
 
+  <div class="contact-grid">
     <form id="contactForm" action="https://formspree.io/f/xeepnylb" method="POST">
       <input type="hidden" name="_subject" value="New Enquiry - Risico Website">
 
@@ -503,97 +399,74 @@
     </form>
 
     <iframe class="map" src="https://www.google.com/maps?q=Edenvale,South%20Africa&output=embed"></iframe>
-  </section>
-
-  <div class="footer">
-    <p>© 2026 Risico Consulting | Making Life Safer</p>
   </div>
+</section>
 
-  <script>
-    function getSelectedEnquiries() {
-      return Array.from(document.querySelectorAll('input[name="enquiry[]"]:checked')).map(el => el.value);
-    }
+<div class="footer">
+  <p>© 2026 Risico Consulting | Making Life Safer | CAIA SQAS-AFRICA Accredited Auditor</p>
+</div>
 
-    function showEnquiryError() {
-      const error = document.getElementById("checkboxError");
-      error.style.display = "block";
-      const contactSection = document.getElementById("contact");
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-      alert("Please select at least one enquiry type.");
-    }
+<script>
+function getSelectedEnquiries(){
+  return Array.from(document.querySelectorAll('input[name="enquiry[]"]:checked')).map(el=>el.value);
+}
 
-    function hideEnquiryError() {
-      const error = document.getElementById("checkboxError");
-      error.style.display = "none";
-    }
+function showEnquiryError(){
+  const error=document.getElementById("checkboxError");
+  error.style.display="block";
+  document.getElementById("contact").scrollIntoView({behavior:"smooth",block:"start"});
+  alert("Please select at least one enquiry type.");
+}
 
-    function sendWhatsApp() {
-      const selected = getSelectedEnquiries();
+function hideEnquiryError(){
+  document.getElementById("checkboxError").style.display="none";
+}
 
-      if (selected.length === 0) {
-        showEnquiryError();
-        return;
-      }
+function sendWhatsApp(){
+  const selected=getSelectedEnquiries();
+  if(selected.length===0){showEnquiryError();return;}
+  hideEnquiryError();
 
-      hideEnquiryError();
+  const lines=selected.map(item=>"- "+item);
+  let message="Hello, I came across Risico Consulting.%0A%0A";
+  message+="Enquiry Type:%0A"+lines.join("%0A")+"%0A%0A";
+  message+="Please could you contact me regarding the above.";
 
-      const lines = selected.map(item => "- " + item);
-      let message = "Hello, I came across Risico Consulting.%0A%0A";
-      message += "Enquiry Type:%0A" + lines.join("%0A") + "%0A%0A";
-      message += "Please could you contact me regarding the above.";
+  window.open("https://wa.me/27632578532?text="+message,"_blank");
+}
 
-      window.open("https://wa.me/27632578532?text=" + message, "_blank");
-    }
+function sendEmail(){
+  const selected=getSelectedEnquiries();
+  if(selected.length===0){showEnquiryError();return;}
+  hideEnquiryError();
 
-    function sendEmail() {
-      const selected = getSelectedEnquiries();
+  const subject=encodeURIComponent("Website Enquiry - "+selected.join(", "));
+  const body=encodeURIComponent(
+    "Hello,\n\nI came across Risico Consulting.\n\nEnquiry Type:\n"+
+    selected.map(item=>"- "+item).join("\n")+
+    "\n\nPlease could you contact me regarding the above."
+  );
 
-      if (selected.length === 0) {
-        showEnquiryError();
-        return;
-      }
+  window.location.href="mailto:ivor@risico.co.za?subject="+subject+"&body="+body;
+}
 
-      hideEnquiryError();
+document.getElementById("contactForm").addEventListener("submit",function(e){
+  e.preventDefault();
 
-      const subject = encodeURIComponent("Website Enquiry - " + selected.join(", "));
-      const bodyLines = selected.map(item => "- " + item);
-      const body = encodeURIComponent(
-        "Hello,\n\n" +
-        "I came across Risico Consulting.\n\n" +
-        "Enquiry Type:\n" +
-        bodyLines.join("\n") +
-        "\n\nPlease could you contact me regarding the above."
-      );
+  const selected=getSelectedEnquiries();
+  if(selected.length===0){showEnquiryError();return;}
+  hideEnquiryError();
 
-      window.location.href = "mailto:ivor@risico.co.za?subject=" + subject + "&body=" + body;
-    }
+  const lines=selected.map(item=>"- "+item);
+  let message="Hello, I came across Risico Consulting.%0A%0A";
+  message+="Enquiry Type:%0A"+lines.join("%0A")+"%0A%0A";
+  message+="Please could you contact me regarding the above.";
 
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      e.preventDefault();
+  window.open("https://wa.me/27632578532?text="+message,"_blank");
 
-      const selected = getSelectedEnquiries();
-
-      if (selected.length === 0) {
-        showEnquiryError();
-        return;
-      }
-
-      hideEnquiryError();
-
-      const lines = selected.map(item => "- " + item);
-      let message = "Hello, I came across Risico Consulting.%0A%0A";
-      message += "Enquiry Type:%0A" + lines.join("%0A") + "%0A%0A";
-      message += "Please could you contact me regarding the above.";
-
-      window.open("https://wa.me/27632578532?text=" + message, "_blank");
-
-      setTimeout(() => {
-        e.target.submit();
-      }, 500);
-    });
-  </script>
+  setTimeout(()=>{e.target.submit();},500);
+});
+</script>
 
 </body>
 </html>
